@@ -1,0 +1,11 @@
+java Prog3 inputA
+Optimal cost matrix from post 0 to post 5: 24
+Optimal sequence of rentals: Post 0 -> Post 4 -> Post 5
+
+java Prog3 inputB
+Optimal cost matrix from post 0 to post 5: 1
+Optimal sequence of rentals: Post 0 -> Post 5
+
+java Prog3 inputC
+Optimal cost matrix from post 0 to post 5: 5
+Optimal sequence of rentals: Post 0 -> Post 1 -> Post 2 -> Post 3 -> Post 4 -> Post 5
