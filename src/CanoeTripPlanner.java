@@ -87,15 +87,35 @@ public class CanoeTripPlanner {
 
     /**************************************************************/
     /* Method: printOptimalCost                                   */
-    /* Purpose: Print the result of optimal cost from post 0 to 5 */
+    /* Purpose: Print the result of optimal cost from every posts */
     /**************************************************************/
 
-    private void printOptimalCost() {
+    private void printOptimalCosts() {
         int n = optimalCosts.length;
-        System.out.println("Optimal cost matrix from post 0 to post " + (n-1) + ": " + optimalCosts[0][n-1]);
-        
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                System.out.println("Optimal cost from post " + i + " to post " + j + ": " + optimalCosts[i][j]);
+            }
+        }        
+        System.out.println();
     }
 
+
+    private void printOptimalCostMatrix() {
+        int n = optimalCosts.length;
+        System.out.println("Optimal cost matrix:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i < j) {
+                    System.out.print(optimalCosts[i][j] + "\t");
+                } else {
+                    System.out.print("-\t");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
 
     /**************************************************************/
     /* Method: printOptimalSequence                                */
@@ -123,7 +143,7 @@ public class CanoeTripPlanner {
         }
         path.add(end);
 
-        System.out.print("Optimal sequence of rentals: ");
+        System.out.print("Optimal sequence of rentals between post 0 and " + end + ": ");
         for (int i = 0; i < path.size(); i++) {
             if (i > 0) System.out.print(" -> ");
             System.out.print("Post " + path.get(i));
@@ -137,7 +157,8 @@ public class CanoeTripPlanner {
     /**************************************************************/
 
     void printResult() {
-        printOptimalCost();
+        printOptimalCosts();
+        printOptimalCostMatrix();
         printOptimalSequence();
         System.out.print("\n\n");
     }
