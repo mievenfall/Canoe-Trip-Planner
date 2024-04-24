@@ -1,11 +1,90 @@
 java Prog3 inputA
-Optimal cost matrix from post 0 to post 5: 24
-Optimal sequence of rentals: Post 0 -> Post 4 -> Post 5
+Optimal cost from post 0 to post 1: 10
+Optimal cost from post 0 to post 2: 33
+Optimal cost from post 0 to post 3: 5
+Optimal cost from post 0 to post 4: 12
+Optimal cost from post 0 to post 5: 24
+Optimal cost from post 1 to post 2: 23
+Optimal cost from post 1 to post 3: 16
+Optimal cost from post 1 to post 4: 38
+Optimal cost from post 1 to post 5: 44
+Optimal cost from post 2 to post 3: 30
+Optimal cost from post 2 to post 4: 15
+Optimal cost from post 2 to post 5: 27
+Optimal cost from post 3 to post 4: 33
+Optimal cost from post 3 to post 5: 43
+Optimal cost from post 4 to post 5: 12
+
+Optimal cost matrix:
+                0       1       2       3       4       5
+
+        0       -       10      33      5       12      24
+        1       -       -       23      16      38      44
+        2       -       -       -       30      15      27
+        3       -       -       -       -       33      43
+        4       -       -       -       -       -       12
+        5       -       -       -       -       -       -
+
+Optimal sequence of rentals between post 0 and 5: Post 0 -> Post 4 -> Post 5
+
+----------------------------------------------------------------------------------------
 
 java Prog3 inputB
-Optimal cost matrix from post 0 to post 5: 1
-Optimal sequence of rentals: Post 0 -> Post 5
+Optimal cost from post 0 to post 1: 15
+Optimal cost from post 0 to post 2: 20
+Optimal cost from post 0 to post 3: 34
+Optimal cost from post 0 to post 4: 24
+Optimal cost from post 0 to post 5: 1
+Optimal cost from post 1 to post 2: 23
+Optimal cost from post 1 to post 3: 35
+Optimal cost from post 1 to post 4: 23
+Optimal cost from post 1 to post 5: 15
+Optimal cost from post 2 to post 3: 35
+Optimal cost from post 2 to post 4: 24
+Optimal cost from post 2 to post 5: 33
+Optimal cost from post 3 to post 4: 12
+Optimal cost from post 3 to post 5: 30
+Optimal cost from post 4 to post 5: 44
+
+Optimal cost matrix:
+                0       1       2       3       4       5
+
+        0       -       15      20      34      24      1
+        1       -       -       23      35      23      15
+        2       -       -       -       35      24      33
+        3       -       -       -       -       12      30
+        4       -       -       -       -       -       44
+        5       -       -       -       -       -       -
+
+Optimal sequence of rentals between post 0 and 5: Post 0 -> Post 5
+
+----------------------------------------------------------------------------------------
 
 java Prog3 inputC
-Optimal cost matrix from post 0 to post 5: 5
-Optimal sequence of rentals: Post 0 -> Post 1 -> Post 2 -> Post 3 -> Post 4 -> Post 5
+Optimal cost from post 0 to post 1: 1
+Optimal cost from post 0 to post 2: 2
+Optimal cost from post 0 to post 3: 3
+Optimal cost from post 0 to post 4: 4
+Optimal cost from post 0 to post 5: 5
+Optimal cost from post 1 to post 2: 1
+Optimal cost from post 1 to post 3: 2
+Optimal cost from post 1 to post 4: 3
+Optimal cost from post 1 to post 5: 4
+Optimal cost from post 2 to post 3: 1
+Optimal cost from post 2 to post 4: 2
+Optimal cost from post 2 to post 5: 3
+Optimal cost from post 3 to post 4: 1
+Optimal cost from post 3 to post 5: 2
+Optimal cost from post 4 to post 5: 1
+
+Optimal cost matrix:
+                0       1       2       3       4       5
+
+        0       -       1       2       3       4       5
+        1       -       -       1       2       3       4
+        2       -       -       -       1       2       3
+        3       -       -       -       -       1       2
+        4       -       -       -       -       -       1
+        5       -       -       -       -       -       -
+
+Optimal sequence of rentals between post 0 and 5: Post 0 -> Post 1 -> Post 2 -> Post 3 -> Post 4 -> Post 5

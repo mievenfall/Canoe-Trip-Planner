@@ -104,12 +104,21 @@ public class CanoeTripPlanner {
     private void printOptimalCostMatrix() {
         int n = optimalCosts.length;
         System.out.println("Optimal cost matrix:");
+        System.out.print("\t ");
+
         for (int i = 0; i < n; i++) {
+            System.out.print("\t"+i);
+        }
+        System.out.println();
+        System.out.println();
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("\t"+i);
             for (int j = 0; j < n; j++) {
                 if (i < j) {
-                    System.out.print(optimalCosts[i][j] + "\t");
+                    System.out.print("\t"+optimalCosts[i][j]);
                 } else {
-                    System.out.print("-\t");
+                    System.out.print("\t-");
                 }
             }
             System.out.println();
