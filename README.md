@@ -75,5 +75,5 @@ To use the program:
 
 - Add your input file to `/input` folder
 - Navigate to the /src directory by `cd src`
-- Run `javac Prog3.java` and `java Prog3 <YOUR_INPUT_FILE>` (or `java Prog2 inputA`/`java Prog2 inputB`/`java Prog2 inputC` for the sample input file)
+- Run `javac Prog3.java` and `java Prog3 <YOUR_INPUT_FILE>` (or `java Prog3 inputA`/`java Prog3 inputB`/`java Prog3 inputC` for the sample input file)
 - The program will output optimal costs for all posts and optimal path from first post to last post
